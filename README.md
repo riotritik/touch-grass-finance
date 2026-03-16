@@ -52,3 +52,108 @@ If proof is not submitted, **yield stops accumulating.**
 ---
 
 ## 🏗 Architecture
+
+Next.js Frontend
+↓
+Django REST API
+↓
+PostgreSQL Database
+↓
+Media Storage
+
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+- Next.js
+- React
+- TypeScript
+- TailwindCSS
+
+### Backend
+- Django
+- Django REST Framework
+
+### Infrastructure
+- Render (API Hosting)
+- Vercel (Frontend Hosting)
+
+---
+
+## 📸 Proof System
+
+Each proof submission requires:
+
+- Photo upload
+- GPS coordinates
+- Wallet address
+
+Proofs are stored and validated on the backend.
+
+---
+
+## 📊 Reward Model
+
+Rewards increase based on **streak consistency**.
+
+Example:
+
+| Streak | Yield Multiplier |
+|------|------|
+| 1 day | 1x |
+| 7 days | 1.5x |
+| 30 days | 2x |
+
+---
+
+## 🔧 Local Development
+
+### Backend
+cd touchgrass_backend
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
+
+
+Server runs at:
+http://127.0.0.1:8000
+
+---
+
+### Frontend
+cd touchgrass_frontend
+npm install
+npm run dev
+
+Frontend runs at:
+http://localhost:3000
+
+---
+
+## 🌱 Future Improvements
+
+- AI grass detection
+- On-chain staking contracts
+- Mobile app
+- NFT streak rewards
+- Social leaderboard
+
+---
+
+## 🧑‍💻 Author
+
+**Ritik Kumar**
+
+AI/ML Engineer  
+Django Full-Stack Developer
+
+Portfolio  
+https://ritikgangwar.netlify.app
+
+---
+
+## 📜 License
+
+MIT License
